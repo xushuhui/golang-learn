@@ -21,11 +21,12 @@ type Dog struct {
 }
 
 func (d *Dog) Speak() {
-	d.p.Speak()
+	fmt.Print("dog")
 }
 func (d *Dog) SpeakTo(host string) {
 	d.p.SpeakTo(host)
 }
 func TestDog(t *testing.T) {
-
+	dog := new (Dog)
+	dog.SpeakTo("xsss")
 }
