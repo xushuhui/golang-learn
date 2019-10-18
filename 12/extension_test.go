@@ -29,4 +29,5 @@ func (d *Dog) SpeakTo(host string) {
 func TestDog(t *testing.T) {
 	dog := new (Dog)
 	dog.SpeakTo("xsss")
+	t.Log(123);
 }
